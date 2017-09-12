@@ -1,8 +1,10 @@
 # ToursJS
 
-A vanilla JS plugin that gives users a tutorial like feature tour elements/features of a webpage. 
+A vanilla JS plugin that gives users a tutorial like feature tour of webpage's differnt elements. 
 TourJS works with responsive sites, and has edge detection built in to prevent tour decriptions from ever falling off screen.
 The plugin also works on any level of nested elements you have on the page, so you should never need to restructure your document.
+
+## [See Demo Here](https://jsfiddle.net/wf3o53mc/)
 
 ## Install
 
@@ -28,8 +30,6 @@ Finally, distribute `data-tour-description` attribute across our document like s
 You should now have a responsive feature / element touring experince on your site.
 
 Please note that although the plugin works with nested element, each element's styles needs to not have any style dependencies on parent wrappers. If tour elements do have parent element style dependencies, these styles will be lost once that element is opened by ToursJS.
-
-## [See Demo Here](https://jsfiddle.net/wf3o53mc/)
 
 ## Options
 Options can be passed to the plugin through the instantator:
