@@ -1,0 +1,87 @@
+//ToursJS 1.0
+//Devin R. Olsen - 2017
+//http://www.devinrolsen.com
+
+.tour-overlay {
+	background-color: rgba(14, 54, 95, 0.95);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.tour-clone {
+	background-color: #fff;
+	position: absolute;
+	z-index: 2;
+}
+
+.tour-box {
+	color: #000;
+	max-width: 320px;
+	position: absolute;
+	width: 100%;
+	z-index: 3;
+
+	&-inner {
+		background-color: #fff;
+		border-radius: 5px;
+		padding: 1rem;		
+	}
+
+	& .tour-button {
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		font-size: 1rem;
+		height: 20px;	
+		width: 20px;
+	}
+
+	& .tour-close {
+		right: 0;	
+		&:before {
+			color: #fff;
+			content: "\00d7";
+			display: block;			
+		}		
+	}	
+
+	& .tour-back, & .tour-forward {
+		background-repeat: no-repeat;
+		&:before {
+			color: #fff;
+			display: block;
+			left: 0;
+			position: absolute;
+			top: 0;	
+		}
+	}
+
+	& .tour-back { 
+		&:before {
+			content: '\2039';
+		}
+		left: 3px;
+	}
+
+	& .tour-forward { 
+		&:before {
+			content: '\203A';			
+		}
+		left: 35px;
+	}
+
+	&__align-top {
+		& .tour-button { 
+			top: -40px;
+		}
+	}
+	&__align-bottom {
+		& .tour-button { 
+			bottom: -40px;
+		}				
+	}
+}

@@ -1,9 +1,9 @@
-//Tours JS 1.0
+//ToursJS 1.0
 //Devin R. Olsen - 2017
 //http://www.devinrolsen.com
 
 let _this, history, tour, current, resizeWait;
-class FeatureTour {
+class ToursJS {
 	constructor(options){
 		this.options = options || {
 			debounce: 260
